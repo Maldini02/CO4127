@@ -1,16 +1,15 @@
-function select(el) {
-	document.querySelector(".navsearch").classList.remove("active")
-	document.querySelector(".active").classList.remove("active")
-	
-	el.classList.add("active")
-	
-	document.body.style.setProperty('--activeclr', el.dataset.clr);
-}
-function selectsearch() {
-	console.log("select")
-	const el = document.querySelector(".navsearch")
-	el.classList.toggle("active")
-	if (el.classList.contains("active")) {
-		document.querySelector(".searchbox").focus()
-	}
-}
+// JavaScript for footer interaction
+document.addEventListener("DOMContentLoaded", function () {
+    const icons = document.querySelectorAll(".footer-icon");
+
+    // Add hover effect to footer icons
+    icons.forEach(icon => {
+        icon.addEventListener("mouseenter", function () {
+            this.style.transform = "translateY(-5px)";
+        });
+
+        icon.addEventListener("mouseleave", function () {
+            this.style.transform = "translateY(0)";
+        });
+    });
+});
