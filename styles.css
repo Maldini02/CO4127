@@ -73,6 +73,7 @@ nav, section {
 .navitem.active {
     background-color: #123b81;
     border-radius: 5px;
+    color: #ffffff;
 }
 
 .indicator,
@@ -110,12 +111,12 @@ main {
 }
 
 .container1,
-.container2,
-.container3,
 .container4,
 .container5 {
-    padding: 20px;
+    padding: 5px;
     border-radius: 5px;
+    max-width: 1200px;
+    width: auto;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -124,12 +125,32 @@ main {
 }
 
 .container2 {
-    background-color: #fff;
+    background-color: #4ECDC4;
+    padding: 5px;
+    border-radius: 5px;
+    max-width: 1200px;
+    width: auto;
+}
+
+.container2 + .container4 {
+    margin-top: 20px; 
+    margin-bottom: 20px;
 }
 
 .container3 {
-    background-color: #4ECDC4;
+    padding: 5px;
+    border-radius: 5px;
+    max-width: 400px;
+    width: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
 }
+
+.container3 + .container3 {
+    margin: 20px; /* Adjust the value as needed */
+}
+
+
 
 .container4 {
     display: flex;
@@ -141,6 +162,14 @@ main {
     display: flex;
     justify-content: content;
     background-color: #59c320;
+}
+
+.container6 {
+    display: flex;
+    padding: 5px;
+    border-radius: 5px;
+    max-width: 800px;
+    width: auto;
 }
 
 /* FAQ */
