@@ -13,3 +13,32 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const questionButtons = document.querySelectorAll('.question');
+
+// JavaScript for FAQ
+    questionButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+            const answer = button.nextElementSibling;
+            if (answer.style.display === 'none') {
+                answer.style.display = 'block';
+            } else {
+                answer.style.display = 'none';
+            }
+        });
+    });
+});
+
+// JavaScript for explore
+document.addEventListener("DOMContentLoaded", function() {
+    // Add event listener to the button
+    var exploreButton = document.getElementById("exploreLink");
+    exploreButton.addEventListener("click", function(event) {
+        // Prevent default link behavior
+        event.preventDefault();
+        
+        // Alert when button is clicked
+        alert("Exploring!");
+    });
+});

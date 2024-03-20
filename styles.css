@@ -90,64 +90,114 @@ main {
 
 .container1 {
     padding: 20px;
+    background-color: #808080;
+    border-radius: 5px;
+}
+
+.container2 {
+    padding: 20px;
     background-color: #fff;
     border-radius: 5px;
 }
 
+.container3 {
+    padding: 20px;
+    background-color: #4ECDC4;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container4 {
+            display: flex;
+            justify-content: space-between; /* Adjust alignment as needed */
+            margin-bottom: 20px; /* Add some spacing between rows */
+            background-color: #fff; /* White background */
+            padding: 20px; /* Add padding */
+            border-radius: 8px; /* Add border radius */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+        }
+
+/* FAQ */
+.faq-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        .faq {
+            width: absolute; /* Adjust width as needed */
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .question {
+            background-color: #e7e7e7;
+            color: #333;
+            font-weight: bold;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
+            outline: none;
+        }
+
+        .answer {
+            display: none;
+            padding: 10px;
+            border-top: 1px solid #ccc;
+        }
+
+        .answer.active {
+            display: block;
+        }
+
+
 /* Footer Styles */
-footer {
-    background-color: #1e1e1e;
-    color: #fff;
-    padding: 50px 0;
-    text-align: center;
-}
-
-.socials,
-.links {
-    list-style: none;
-    padding: 0;
-}
-
-.socials li,
-.links li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-.socials li a,
-.links li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.legal {
-    margin-top: 20px;
-}
-
-/* Animation Styles */
-@keyframes wave {
-    0% {
-        transform: translate(0px);
-    }
-    50% {
-        transform: translate(-25px);
-    }
-    100% {
-        transform: translate(0px);
-    }
-}
-
-#wave {
-    animation: wave 3s infinite;
-}
-
-/* Additional Styles */
-.footer-icon {
-    font-size: 24px;
-    transition: transform 0.3s ease;
-}
-
-.footer-icon:hover {
-    transform: translateY(-5px);
-}
+.background {
+            position: relative;
+            overflow: hidden;
+            height: 100px; /* Adjust height as needed */
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between; /* Adjust alignment as needed */
+            margin-bottom: 20px; /* Add some spacing between rows */
+            background-color: #FF6B68; /* White background */
+            padding: 20px; /* Add padding */
+            border-radius: 8px; /* Add border radius */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+        }
+        .cmp-card__button-wrapper {
+            flex: 1; /* Allow each button wrapper to take up equal space */
+        }
+        .button {
+            width: 100%;
+            text-align: center;
+        }
+        .footer-container {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            padding: 20px; /* Add padding */
+            color: #fff; /* White text color */
+            text-align: center;
+        }
+        .socials,
+        .links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Add some spacing between icons/links */
+        }
+        .footer-icon {
+            font-size: 24px;
+            color: #fff;
+        }
