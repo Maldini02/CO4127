@@ -11,6 +11,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    overflow: hidden;
 }
 
 /* Header Styles */
@@ -118,10 +119,12 @@ main {
 .container6,
 .container7,
 .container8,
-.container9 {
+.container9,
+.container12 {
     padding: 20px;
     border-radius: 5px;
     width: auto;
+    overflow: hidden;
 }
 
 .container1 {
@@ -154,6 +157,18 @@ main {
     height: auto;
     max-height: 3000px;
     background-color: #ee1515;
+    color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 10px;
+}
+
+.container12 {
+    justify-content: content;
+    padding: 10px;
+    max-width: 250px;
+    height: auto;
+    max-height: 3000px;
+    background-color: #48c9a0;
     color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-left: 10px;
@@ -218,9 +233,154 @@ p {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.container7 {
+    max-height: 600px;
+}
+
 .container11 {
     padding-top: 5px;
     margin-left: 10px;
+}
+
+.content {
+    transition: max-height 0.3s ease;
+}
+
+.show-more {
+    cursor: pointer;
+    color: blue;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+h4 {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+.container .example {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.container .example p {
+    margin-bottom: 0;
+}
+
+.container .example a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.container .example a:hover {
+    text-decoration: underline;
+}
+
+.container .checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.checkbox-wrapper-11 {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.checkbox-wrapper-11 label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.checkbox-wrapper-11 input[type="checkbox"] {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.info .col-md-4,
+.info .col-xs-4 {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding-right: 10px;
+}
+
+.info .col-md-8,
+.info .col-xs-8 {
+    flex: 0 0 66.66%;
+    max-width: 66.66%;
+}
+
+.container .row.info p {
+    margin-bottom: 0;
+}
+
+.abbr {
+    border-bottom: 1px dotted #000;
+    cursor: help;
+}
+
+.abbr:hover {
+    text-decoration: none;
+}
+
+/* Media Queries for responsiveness */
+
+@media (max-width: 768px) {
+    .container1 {
+        flex-direction: column;
+    }
+
+    .container2 {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .container3 {
+        grid-template-columns: 1fr;
+    }
+
+    .container4,
+    .container5,
+    .container6,
+    .container7,
+    .container8,
+    .container9 {
+        margin-bottom: 20px;
+    }
+
+    .container6 {
+        flex-direction: column;
+    }
 }
 
 /* FAQ */

@@ -42,3 +42,18 @@ document.addEventListener("DOMContentLoaded", function() {
         alert("Exploring!");
     });
 });
+
+
+const container = document.querySelector('.container');
+        const content = document.querySelector('.content');
+        const showMoreBtn = document.querySelector('.show-more');
+
+        showMoreBtn.addEventListener('click', () => {
+            if (container.style.maxHeight) {
+                container.style.maxHeight = null;
+                showMoreBtn.textContent = 'Read More';
+            } else {
+                container.style.maxHeight = content.scrollHeight + 'px';
+                showMoreBtn.textContent = 'Read Less';
+            }
+        });
