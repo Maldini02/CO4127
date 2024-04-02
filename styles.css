@@ -120,7 +120,8 @@ main {
 .container7,
 .container8,
 .container9,
-.container12 {
+.container12,
+.container13 {
     padding: 20px;
     border-radius: 5px;
     width: auto;
@@ -135,7 +136,8 @@ main {
     background-color: #4ECDC4;
     max-width: 300px;
     height: auto;
-    margin-right: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
     padding-top: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -159,7 +161,6 @@ main {
     background-color: #ee1515;
     color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-left: 10px;
 }
 
 .container12 {
@@ -171,7 +172,16 @@ main {
     background-color: #48c9a0;
     color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-left: 10px;
+}
+
+.container13 {
+    justify-content: content;
+    width: auto;
+    height: auto;
+    max-height: 3000px;
+    background-color: #48c9a0;
+    color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .container .card {
